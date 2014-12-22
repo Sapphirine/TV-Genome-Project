@@ -19,5 +19,11 @@ TweetSentQuery.py
 ===============
 A script that allows for users to easily query the twitter database with an aggregation pipeline.
 
+recommender_sql.sql
+==================
+SQL queries to get the tunings data from AMG's database.
 
+example_ratings_file.csv
+=======================
+Example csv file to be read by App.java. This is the file off which recommendations are made.
 
