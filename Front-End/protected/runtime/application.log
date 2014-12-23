@@ -1,0 +1,777 @@
+2014/12/10 18:27:27 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/Telivision_Rating/themes/abound/views/site/index.php:17)
+Stack trace:
+#0 /Applications/MAMP/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /Applications/MAMP/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /Applications/MAMP/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CWebApplication->run()
+REQUEST_URI=/Telivision_Rating/index.php?r=site/index
+in /Applications/MAMP/htdocs/Telivision_Rating/themes/abound/views/site/index.php (17)
+in /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/SiteController.php (32)
+in /Applications/MAMP/htdocs/Telivision_Rating/index.php (13)
+2014/12/10 18:28:41 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/Telivision_Rating/themes/abound/views/site/index.php:19)
+Stack trace:
+#0 /Applications/MAMP/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /Applications/MAMP/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /Applications/MAMP/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CWebApplication->run()
+REQUEST_URI=/Telivision_Rating/index.php?r=site/index
+in /Applications/MAMP/htdocs/Telivision_Rating/themes/abound/views/site/index.php (19)
+in /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/SiteController.php (32)
+in /Applications/MAMP/htdocs/Telivision_Rating/index.php (13)
+2014/12/11 03:04:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /Applications/MAMP/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Applications/MAMP/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Applications/MAMP/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Applications/MAMP/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Applications/MAMP/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Applications/MAMP/yii/framework/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /Applications/MAMP/yii/framework/web/CFormModel.php(39): CrudCode->init()
+#6 /Applications/MAMP/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Applications/MAMP/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=gii/crud/index
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=gii/default/index
+---
+2014/12/11 03:04:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /Applications/MAMP/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Applications/MAMP/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Applications/MAMP/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Applications/MAMP/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Applications/MAMP/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Applications/MAMP/yii/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /Applications/MAMP/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /Applications/MAMP/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Applications/MAMP/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=gii/default/index
+---
+2014/12/11 03:05:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /Applications/MAMP/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Applications/MAMP/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Applications/MAMP/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Applications/MAMP/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Applications/MAMP/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Applications/MAMP/yii/framework/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /Applications/MAMP/yii/framework/web/CFormModel.php(39): CrudCode->init()
+#6 /Applications/MAMP/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Applications/MAMP/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=gii/crud/index
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=gii/default/index
+---
+2014/12/11 03:08:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /Applications/MAMP/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Applications/MAMP/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Applications/MAMP/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Applications/MAMP/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Applications/MAMP/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Applications/MAMP/yii/framework/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /Applications/MAMP/yii/framework/web/CFormModel.php(39): CrudCode->init()
+#6 /Applications/MAMP/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Applications/MAMP/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=gii/crud/index
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=gii
+---
+2014/12/11 03:11:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /Applications/MAMP/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Applications/MAMP/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Applications/MAMP/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Applications/MAMP/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Applications/MAMP/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Applications/MAMP/yii/framework/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /Applications/MAMP/yii/framework/web/CFormModel.php(39): CrudCode->init()
+#6 /Applications/MAMP/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Applications/MAMP/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=gii/crud/index
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=gii
+---
+2014/12/22 04:27:24 [error] [exception.CException] exception 'CException' with message 'Property "Info.language" is not defined.' in /Applications/MAMP/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('language')
+#1 /Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/_view.php(21): CActiveRecord->__get('language')
+#2 /Applications/MAMP/yii/framework/web/CBaseController.php(130): require('/Applications/M...')
+#3 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, false)
+#4 /Applications/MAMP/yii/framework/zii/widgets/CListView.php(291): CBaseController->renderFile('/Applications/M...', Array)
+#5 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(167): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#9 /Applications/MAMP/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#10 /Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /Applications/MAMP/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#12 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#13 /Applications/MAMP/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#14 /Applications/MAMP/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#15 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php(128): CController->render('index', Array)
+#16 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): InfoController->actionIndex()
+#17 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 /Applications/MAMP/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /Applications/MAMP/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 /Applications/MAMP/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 /Applications/MAMP/yii/framework/web/CController.php(291): CFilterChain->run()
+#24 /Applications/MAMP/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): CController->run('')
+#26 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('info')
+#27 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#28 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=info
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=gii/crud/index
+---
+2014/12/22 04:30:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "protected/views/info".' in /Applications/MAMP/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('protected/views...')
+#1 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=protected/views/info&view=view
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/
+---
+2014/12/22 04:32:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "protected/views/info".' in /Applications/MAMP/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('protected/views...')
+#1 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=protected/views/info&view=view
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=protected/views/info&view=view
+---
+2014/12/22 04:32:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "views/info".' in /Applications/MAMP/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('views/info')
+#1 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=views/info&view=view
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=protected/views/info&view=view
+---
+2014/12/22 04:32:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "views/info".' in /Applications/MAMP/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('views/info')
+#1 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=views/info&view=view
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=views/info&view=view
+---
+2014/12/22 04:32:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "views/info".' in /Applications/MAMP/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('views/info')
+#1 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=views/info&view=view
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=views/info&view=view
+---
+2014/12/22 04:32:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "protected/views/info".' in /Applications/MAMP/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('protected/views...')
+#1 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=protected/views/info&view=view
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=views/info&view=view
+---
+2014/12/22 04:33:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "protected/views/info".' in /Applications/MAMP/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('protected/views...')
+#1 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=protected/views/info&view=view
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=views/info&view=view
+---
+2014/12/22 04:33:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "protected/site".' in /Applications/MAMP/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('protected/site')
+#1 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=protected/site&view=index
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=protected/views/info&view=view
+---
+2014/12/22 04:36:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "protected/site".' in /Applications/MAMP/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('protected/site')
+#1 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=protected/site&view=index
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=protected/site&view=index
+---
+2014/12/22 04:36:55 [error] [exception.CException] exception 'CException' with message 'Property "Info.language" is not defined.' in /Applications/MAMP/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('language')
+#1 /Applications/MAMP/htdocs/Telivision_Rating/themes/abound/views/info/_view.php(21): CActiveRecord->__get('language')
+#2 /Applications/MAMP/yii/framework/web/CBaseController.php(130): require('/Applications/M...')
+#3 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, false)
+#4 /Applications/MAMP/yii/framework/zii/widgets/CListView.php(291): CBaseController->renderFile('/Applications/M...', Array)
+#5 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(167): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#9 /Applications/MAMP/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#10 /Applications/MAMP/htdocs/Telivision_Rating/themes/abound/views/info/index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /Applications/MAMP/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#12 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#13 /Applications/MAMP/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#14 /Applications/MAMP/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#15 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php(128): CController->render('index', Array)
+#16 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): InfoController->actionIndex()
+#17 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 /Applications/MAMP/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /Applications/MAMP/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 /Applications/MAMP/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 /Applications/MAMP/yii/framework/web/CController.php(291): CFilterChain->run()
+#24 /Applications/MAMP/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): CController->run('')
+#26 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('info')
+#27 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#28 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=info&view=view
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=protected/site&view=index
+---
+2014/12/22 04:42:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "protected/site".' in /Applications/MAMP/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('protected/site')
+#1 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=protected/site&view=index
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=protected/site&view=index
+---
+2014/12/22 04:42:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "protected/site".' in /Applications/MAMP/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('protected/site')
+#1 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=protected/site&view=index
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=protected/site&view=index
+---
+2014/12/22 04:42:46 [error] [exception.CException] exception 'CException' with message 'Property "Info.language" is not defined.' in /Applications/MAMP/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('language')
+#1 /Applications/MAMP/htdocs/Telivision_Rating/themes/abound/views/info/_view.php(21): CActiveRecord->__get('language')
+#2 /Applications/MAMP/yii/framework/web/CBaseController.php(130): require('/Applications/M...')
+#3 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, false)
+#4 /Applications/MAMP/yii/framework/zii/widgets/CListView.php(291): CBaseController->renderFile('/Applications/M...', Array)
+#5 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(167): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#9 /Applications/MAMP/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#10 /Applications/MAMP/htdocs/Telivision_Rating/themes/abound/views/info/index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /Applications/MAMP/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#12 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#13 /Applications/MAMP/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#14 /Applications/MAMP/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#15 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php(128): CController->render('index', Array)
+#16 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): InfoController->actionIndex()
+#17 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 /Applications/MAMP/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /Applications/MAMP/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 /Applications/MAMP/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 /Applications/MAMP/yii/framework/web/CController.php(291): CFilterChain->run()
+#24 /Applications/MAMP/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): CController->run('')
+#26 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('info')
+#27 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#28 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=info&view=view
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=protected/site&view=index
+---
+2014/12/22 04:42:59 [error] [exception.CException] exception 'CException' with message 'Property "Info.language" is not defined.' in /Applications/MAMP/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('language')
+#1 /Applications/MAMP/htdocs/Telivision_Rating/themes/abound/views/info/_view.php(21): CActiveRecord->__get('language')
+#2 /Applications/MAMP/yii/framework/web/CBaseController.php(130): require('/Applications/M...')
+#3 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, false)
+#4 /Applications/MAMP/yii/framework/zii/widgets/CListView.php(291): CBaseController->renderFile('/Applications/M...', Array)
+#5 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(167): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#9 /Applications/MAMP/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#10 /Applications/MAMP/htdocs/Telivision_Rating/themes/abound/views/info/index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /Applications/MAMP/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#12 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#13 /Applications/MAMP/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#14 /Applications/MAMP/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#15 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php(128): CController->render('index', Array)
+#16 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): InfoController->actionIndex()
+#17 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 /Applications/MAMP/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /Applications/MAMP/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 /Applications/MAMP/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 /Applications/MAMP/yii/framework/web/CController.php(291): CFilterChain->run()
+#24 /Applications/MAMP/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): CController->run('')
+#26 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('info')
+#27 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#28 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=info&view=view
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=site/page&view=index3
+---
+2014/12/22 04:46:39 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/Telivision_Rating/protected/views/layouts/main.php:17)
+Stack trace:
+#0 /Applications/MAMP/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /Applications/MAMP/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /Applications/MAMP/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /Applications/MAMP/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#4 /Applications/MAMP/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#5 /Applications/MAMP/htdocs/Telivision_Rating/protected/views/layouts/column1.php(14): SiteController->endContent()
+#6 /Applications/MAMP/yii/framework/web/CBaseController.php(126): require()
+#7 /Applications/MAMP/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /Applications/MAMP/yii/framework/web/CController.php(784): SiteController->renderFile()
+#9 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /Applications/MAMP/yii/framework/web/CController.php(286): SiteController->runAction()
+#13 /Applications/MAMP/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CWebApplication->run()
+REQUEST_URI=/Telivision_Rating/
+in /Applications/MAMP/htdocs/Telivision_Rating/protected/views/layouts/main.php (17)
+in /Applications/MAMP/htdocs/Telivision_Rating/protected/views/layouts/column1.php (14)
+in /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/SiteController.php (32)
+2014/12/22 04:48:02 [error] [exception.CException] exception 'CException' with message 'Property "Info.language" is not defined.' in /Applications/MAMP/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('language')
+#1 /Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/_view.php(21): CActiveRecord->__get('language')
+#2 /Applications/MAMP/yii/framework/web/CBaseController.php(130): require('/Applications/M...')
+#3 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, false)
+#4 /Applications/MAMP/yii/framework/zii/widgets/CListView.php(291): CBaseController->renderFile('/Applications/M...', Array)
+#5 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(167): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#9 /Applications/MAMP/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#10 /Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /Applications/MAMP/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#12 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#13 /Applications/MAMP/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#14 /Applications/MAMP/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#15 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php(128): CController->render('index', Array)
+#16 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): InfoController->actionIndex()
+#17 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 /Applications/MAMP/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /Applications/MAMP/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 /Applications/MAMP/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 /Applications/MAMP/yii/framework/web/CController.php(291): CFilterChain->run()
+#24 /Applications/MAMP/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): CController->run('')
+#26 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('info')
+#27 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#28 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=info&view=view
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=site/page&view=forms
+---
+2014/12/22 04:48:30 [error] [exception.CException] exception 'CException' with message 'Property "Info.language" is not defined.' in /Applications/MAMP/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('language')
+#1 /Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/_view.php(21): CActiveRecord->__get('language')
+#2 /Applications/MAMP/yii/framework/web/CBaseController.php(130): require('/Applications/M...')
+#3 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, false)
+#4 /Applications/MAMP/yii/framework/zii/widgets/CListView.php(291): CBaseController->renderFile('/Applications/M...', Array)
+#5 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(167): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#9 /Applications/MAMP/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#10 /Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /Applications/MAMP/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#12 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#13 /Applications/MAMP/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#14 /Applications/MAMP/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#15 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php(128): CController->render('index', Array)
+#16 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): InfoController->actionIndex()
+#17 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 /Applications/MAMP/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /Applications/MAMP/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 /Applications/MAMP/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 /Applications/MAMP/yii/framework/web/CController.php(291): CFilterChain->run()
+#24 /Applications/MAMP/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): CController->run('')
+#26 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('info')
+#27 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#28 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=info&view=view
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=site/page&view=interface
+---
+2014/12/22 04:48:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "igii".' in /Applications/MAMP/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('igii')
+#1 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=igii
+---
+2014/12/22 04:54:06 [error] [php] Use of undefined constant php - assumed 'php' (/Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/_view.php:73)
+Stack trace:
+#0 /Applications/MAMP/yii/framework/zii/widgets/CListView.php(291): InfoController->renderFile()
+#1 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback()
+#4 /Applications/MAMP/yii/framework/zii/widgets/CBaseListView.php(135): CListView->renderContent()
+#5 /Applications/MAMP/yii/framework/web/CBaseController.php(173): CListView->run()
+#6 /Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/index.php(20): InfoController->widget()
+#7 /Applications/MAMP/yii/framework/web/CBaseController.php(126): require()
+#8 /Applications/MAMP/yii/framework/web/CBaseController.php(95): InfoController->renderInternal()
+#9 /Applications/MAMP/yii/framework/web/CController.php(869): InfoController->renderFile()
+#10 /Applications/MAMP/yii/framework/web/CController.php(782): InfoController->renderPartial()
+#11 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php(128): InfoController->render()
+#12 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): InfoController->actionIndex()
+#13 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(133): InfoController->runAction()
+#15 /Applications/MAMP/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /Applications/MAMP/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#17 /Applications/MAMP/yii/framework/web/filters/CInlineFilter.php(58): InfoController->filterAccessControl()
+#18 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#19 /Applications/MAMP/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /Applications/MAMP/yii/framework/web/CController.php(265): InfoController->runActionWithFilters()
+#21 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): InfoController->run()
+#22 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#23 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CWebApplication->run()
+REQUEST_URI=/Telivision_Rating/index.php?r=info&view=view
+in /Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/_view.php (73)
+in /Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/index.php (20)
+in /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php (128)
+2014/12/22 04:59:42 [error] [php] Undefined variable: model (/Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/index.php:12)
+Stack trace:
+#0 /Applications/MAMP/yii/framework/web/CController.php(869): InfoController->renderFile()
+#1 /Applications/MAMP/yii/framework/web/CController.php(782): InfoController->renderPartial()
+#2 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php(128): InfoController->render()
+#3 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): InfoController->actionIndex()
+#4 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(133): InfoController->runAction()
+#6 /Applications/MAMP/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Applications/MAMP/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Applications/MAMP/yii/framework/web/filters/CInlineFilter.php(58): InfoController->filterAccessControl()
+#9 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Applications/MAMP/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Applications/MAMP/yii/framework/web/CController.php(265): InfoController->runActionWithFilters()
+#12 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): InfoController->run()
+#13 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CWebApplication->run()
+REQUEST_URI=/Telivision_Rating/index.php?r=info&view=view
+in /Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/index.php (12)
+in /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php (128)
+in /Applications/MAMP/htdocs/Telivision_Rating/index.php (13)
+2014/12/22 05:00:07 [error] [php] Undefined variable: model (/Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/index.php:13)
+Stack trace:
+#0 /Applications/MAMP/yii/framework/web/CController.php(869): InfoController->renderFile()
+#1 /Applications/MAMP/yii/framework/web/CController.php(782): InfoController->renderPartial()
+#2 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php(128): InfoController->render()
+#3 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): InfoController->actionIndex()
+#4 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(133): InfoController->runAction()
+#6 /Applications/MAMP/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Applications/MAMP/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Applications/MAMP/yii/framework/web/filters/CInlineFilter.php(58): InfoController->filterAccessControl()
+#9 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Applications/MAMP/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Applications/MAMP/yii/framework/web/CController.php(265): InfoController->runActionWithFilters()
+#12 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): InfoController->run()
+#13 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CWebApplication->run()
+REQUEST_URI=/Telivision_Rating/index.php?r=info&view=view
+in /Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/index.php (13)
+in /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php (128)
+in /Applications/MAMP/htdocs/Telivision_Rating/index.php (13)
+2014/12/22 05:05:29 [error] [php] trim() expects parameter 1 to be string, array given (/Applications/MAMP/yii/framework/zii/widgets/CMenu.php:311)
+Stack trace:
+#0 /Applications/MAMP/yii/framework/zii/widgets/CMenu.php(277): CMenu->normalizeItems()
+#1 /Applications/MAMP/yii/framework/zii/widgets/CMenu.php(159): CMenu->normalizeItems()
+#2 /Applications/MAMP/yii/framework/web/CBaseController.php(147): CMenu->init()
+#3 /Applications/MAMP/yii/framework/web/CBaseController.php(172): InfoController->createWidget()
+#4 /Applications/MAMP/htdocs/Telivision_Rating/themes/abound/views/layouts/column2.php(18): InfoController->widget()
+#5 /Applications/MAMP/yii/framework/web/CBaseController.php(126): require()
+#6 /Applications/MAMP/yii/framework/web/CBaseController.php(95): InfoController->renderInternal()
+#7 /Applications/MAMP/yii/framework/web/CController.php(784): InfoController->renderFile()
+#8 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php(128): InfoController->render()
+#9 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): InfoController->actionIndex()
+#10 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(133): InfoController->runAction()
+#12 /Applications/MAMP/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Applications/MAMP/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#14 /Applications/MAMP/yii/framework/web/filters/CInlineFilter.php(58): InfoController->filterAccessControl()
+#15 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /Applications/MAMP/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /Applications/MAMP/yii/framework/web/CController.php(265): InfoController->runActionWithFilters()
+#18 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): InfoController->run()
+#19 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CWebApplication->run()
+REQUEST_URI=/Telivision_Rating/index.php?r=info&view=view
+in /Applications/MAMP/htdocs/Telivision_Rating/themes/abound/views/layouts/column2.php (18)
+in /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php (128)
+in /Applications/MAMP/htdocs/Telivision_Rating/index.php (13)
+2014/12/22 05:07:04 [error] [exception.CException] exception 'CException' with message 'Property "Info.language" is not defined.' in /Applications/MAMP/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('language')
+#1 /Applications/MAMP/htdocs/Telivision_Rating/protected/models/Info.php(104): CActiveRecord->__get('language')
+#2 /Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/admin.php(45): Info->search()
+#3 /Applications/MAMP/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#4 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#5 /Applications/MAMP/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#6 /Applications/MAMP/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php(143): CController->render('admin', Array)
+#8 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): InfoController->actionAdmin()
+#9 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Applications/MAMP/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Applications/MAMP/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Applications/MAMP/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Applications/MAMP/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#18 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('info/admin')
+#19 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=info/admin
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=info&view=view
+---
+2014/12/22 05:13:44 [error] [exception.CException] exception 'CException' with message 'Property "Info.language" is not defined.' in /Applications/MAMP/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('language')
+#1 /Applications/MAMP/htdocs/Telivision_Rating/protected/models/Info.php(104): CActiveRecord->__get('language')
+#2 /Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/admin.php(45): Info->search()
+#3 /Applications/MAMP/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#4 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#5 /Applications/MAMP/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#6 /Applications/MAMP/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php(143): CController->render('admin', Array)
+#8 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): InfoController->actionAdmin()
+#9 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Applications/MAMP/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Applications/MAMP/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Applications/MAMP/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Applications/MAMP/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#18 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('info/admin')
+#19 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=info/admin
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=info&view=view
+---
+2014/12/22 05:14:27 [error] [exception.CException] exception 'CException' with message 'Property "Info.language" is not defined.' in /Applications/MAMP/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('language')
+#1 /Applications/MAMP/htdocs/Telivision_Rating/protected/models/Info.php(104): CActiveRecord->__get('language')
+#2 /Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/admin.php(45): Info->search()
+#3 /Applications/MAMP/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#4 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#5 /Applications/MAMP/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#6 /Applications/MAMP/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php(143): CController->render('admin', Array)
+#8 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): InfoController->actionAdmin()
+#9 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Applications/MAMP/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Applications/MAMP/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Applications/MAMP/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Applications/MAMP/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#18 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('info/admin')
+#19 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=info/admin
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=info/view&id=3
+---
+2014/12/22 05:16:33 [error] [exception.CException] exception 'CException' with message 'Property "Info.language" is not defined.' in /Applications/MAMP/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('language')
+#1 /Applications/MAMP/htdocs/Telivision_Rating/protected/models/Info.php(104): CActiveRecord->__get('language')
+#2 /Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/admin.php(45): Info->search()
+#3 /Applications/MAMP/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#4 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#5 /Applications/MAMP/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#6 /Applications/MAMP/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php(143): CController->render('admin', Array)
+#8 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): InfoController->actionAdmin()
+#9 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Applications/MAMP/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Applications/MAMP/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Applications/MAMP/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Applications/MAMP/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#18 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('info/admin')
+#19 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=info/admin
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=info/index
+---
+2014/12/22 05:49:51 [error] [exception.CException] exception 'CException' with message 'Property "Info.language" is not defined.' in /Applications/MAMP/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('language')
+#1 /Applications/MAMP/htdocs/Telivision_Rating/protected/models/Info.php(104): CActiveRecord->__get('language')
+#2 /Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/admin.php(45): Info->search()
+#3 /Applications/MAMP/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#4 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#5 /Applications/MAMP/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#6 /Applications/MAMP/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php(143): CController->render('admin', Array)
+#8 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): InfoController->actionAdmin()
+#9 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Applications/MAMP/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Applications/MAMP/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Applications/MAMP/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Applications/MAMP/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#18 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('info/admin')
+#19 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=info/admin
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=info&view=view
+---
+2014/12/22 05:55:40 [error] [exception.CException] exception 'CException' with message 'Property "Info.language" is not defined.' in /Applications/MAMP/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('language')
+#1 /Applications/MAMP/htdocs/Telivision_Rating/protected/models/Info.php(104): CActiveRecord->__get('language')
+#2 /Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/admin.php(45): Info->search()
+#3 /Applications/MAMP/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#4 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#5 /Applications/MAMP/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#6 /Applications/MAMP/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php(143): CController->render('admin', Array)
+#8 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): InfoController->actionAdmin()
+#9 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Applications/MAMP/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Applications/MAMP/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Applications/MAMP/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Applications/MAMP/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#18 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('info/admin')
+#19 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=info/admin
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=info&view=view
+---
+2014/12/22 05:56:23 [error] [exception.CException] exception 'CException' with message 'Property "Info.language" is not defined.' in /Applications/MAMP/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('language')
+#1 /Applications/MAMP/htdocs/Telivision_Rating/protected/models/Info.php(104): CActiveRecord->__get('language')
+#2 /Applications/MAMP/htdocs/Telivision_Rating/protected/views/info/admin.php(45): Info->search()
+#3 /Applications/MAMP/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#4 /Applications/MAMP/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#5 /Applications/MAMP/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#6 /Applications/MAMP/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /Applications/MAMP/htdocs/Telivision_Rating/protected/controllers/InfoController.php(143): CController->render('admin', Array)
+#8 /Applications/MAMP/yii/framework/web/actions/CInlineAction.php(49): InfoController->actionAdmin()
+#9 /Applications/MAMP/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Applications/MAMP/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Applications/MAMP/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Applications/MAMP/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Applications/MAMP/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /Applications/MAMP/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Applications/MAMP/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#18 /Applications/MAMP/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('info/admin')
+#19 /Applications/MAMP/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /Applications/MAMP/htdocs/Telivision_Rating/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/Telivision_Rating/index.php?r=info/admin
+HTTP_REFERER=http://localhost:8888/Telivision_Rating/index.php?r=info&view=view
+---
