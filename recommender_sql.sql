@@ -28,8 +28,8 @@ update  joshua.master_recommend_data set total_hours_viewed=total_hours_viewed/3
 select * from joshua.master_recommend_data limit 1000
 
 --send sample file for testing
-unload ('select * from joshua.master_recommend_data limit 1000') to 's3://amg-analytics-1/home/joshua/activity.csv' delimiter ','  parallel off gzip
-credentials 'aws_access_key_id=****;aws_secret_access_key=****';
+unload ('select * from joshua.master_recommend_data limit 1000') to '/home/joshua/activity.csv' delimiter ','  parallel off gzip
+credentials 'aws_access_key_id=;aws_secret_access_key=';
 
  -- exploratory analysis on temporary table containing user information
 create table joshua.user_info as
@@ -79,8 +79,8 @@ select * from joshua.ratings_perc_total_hours limit 20
 -- export full file to s3 as gzipped csv
 unload ('select user_id, series_id, rating from (select user_id,series_id, rating, 
 rank() over (partition by user_id order by rating desc) as pos 
-from ratings_perc_total_hours) where pos < 16 and series_id is not null and user_id is not null  ') to 's3://amg-analytics-1/home/joshua/ratings_1.csv' delimiter ','  parallel off gzip
-credentials 'aws_access_key_id=****;aws_secret_access_key=*****';
+from ratings_perc_total_hours) where pos < 16 and series_id is not null and user_id is not null  ') to '/home/joshua/ratings_1.csv' delimiter ','  parallel off gzip
+credentials 'aws_access_key_id=;aws_secret_access_key=';
 
 
 select user_id, series_id, rating from (select user_id,series_id, rating, 
@@ -107,8 +107,8 @@ rank() over (partition by user_id order by ratings desc) as pos from
 ratings_aggregate
 a inner join 
 ( select series_id from (select series_id, count(user_id) as count_me from avg_ratios_ratings group by series_id ) where count_me>=5000 ) b
- on a.series_id=b.series_id) where pos<=15 and series_id is not null and user_id is not null ') to 's3://amg-analytics-1/home/joshua/ratings__aggregate_filtered.csv' delimiter ','  parallel off gzip
-credentials 'aws_access_key_id=****;aws_secret_access_key=*****';
+ on a.series_id=b.series_id) where pos<=15 and series_id is not null and user_id is not null ') to '/home/joshua/ratings__aggregate_filtered.csv' delimiter ','  parallel off gzip
+credentials 'aws_access_key_id=;aws_secret_access_key=';
 
 select max(total_days_tv_watched), min(total_days_tv_watched), avg(total_days_tv_watched), stddev(total_days_tv_watched) from recommender_data limit 20 
 
@@ -191,8 +191,8 @@ from recommender_data inner join media.series on id=series_id
  -- unload table that maps series id to namea and provided various television shows 
  unload ('select id, series_name , genre, categories,avg(series_duration_per_day) as avg_series_dur_per_day, count(user_id)*1.0/1398359 as num_users
 from recommender_data inner join media.series on id=series_id
- group by id, series_name, genre, categories ') to 's3://amg-analytics-1/home/joshua/series_info.csv' delimiter '|'  parallel off gzip
-credentials 'aws_access_key_id=****;aws_secret_access_key=***';
+ group by id, series_name, genre, categories ') to 's3/home/joshua/series_info.csv' delimiter '|'  parallel off gzip
+credentials 'aws_access_key_id=;aws_secret_access_key=';
 
 select * from joshua.recommendeR_data limit 20 ; 
 
